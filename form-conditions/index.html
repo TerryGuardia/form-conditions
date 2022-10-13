@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO HTML Formulaire - Conditions</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div>
+                <p>Sexe :</p>
+                <label for="m">Masculin</label>
+                <input type="radio" name="sexe" id="m">
+                <label for="f">Féminin</label>
+                <input type="radio" name="sexe" id="f">
+            </div>
+            <label for="lname">Nom :</label>
+            <input type="text" name="lname" id="lname" minlength="2" maxlength="25">
+            <label for="fname">Prénom :</label>
+            <input type="text" name="fname" id="fname" minlength="2" maxlength="25">
+            <label for="age">Age :</label>
+            <input type="number" name="age" id="age" min="18" max="120">
+            <label for="pseudo">Pseudo :</label>
+            <input type="text" name="pseudo" id="pseudo" minlength="4" maxlength="15">
+            <label for="password">Mot de passe :</label>
+            <input type="password" name="password" id="password" minlength="6">
+            <label for="message">Message :</label>
+            <textarea name="message" id="message" cols="25" rows="6"></textarea>
+            <fieldset>
+                <legend>Choisir deux pays :</legend>
+                <div>
+                    <input type="checkbox" name="c1" id="p1" checked>
+                    <label for="p1">France</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="c2" id="p2" checked>
+                    <label for="p2">Espagne</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="c3" id="p3">
+                    <label for="p3">Allemagne</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="c4" id="p4">
+                    <label for="p4">Italie</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="c5" id="p5">
+                    <label for="p5">Portugal</label>
+                </div>
+            </fieldset>
+            <div>
+                <p>Souhaitez vous recevoir des mails :</p>
+                <label for="yes">Oui</label>
+                <input type="radio" name="newsletter" id="yes">
+                <label for="no">Non</label>
+                <input type="radio" name="newsletter" id="no">
+            </div>
+            <button>validez</button>
+        </form>
+    </main>
+</body>
+
+</html>
